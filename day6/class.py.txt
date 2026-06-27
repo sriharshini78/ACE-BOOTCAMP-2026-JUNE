@@ -1,0 +1,7 @@
+class Student:
+    pass
+s1=Student()
+s1.name="xyz"
+s1.branch="abc"
+s1.rno="123"
+print(s1.name+","+s1.rno)
