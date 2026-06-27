@@ -1,0 +1,6 @@
+a=input("enter the value of a: ")
+print("r" in a)
+print("z" in a)
+print("y" not in a)
+print(type(a))
+print(id(a))
