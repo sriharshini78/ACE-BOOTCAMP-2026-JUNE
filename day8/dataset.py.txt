@@ -1,0 +1,26 @@
+import pandas as pd
+data = pd.read_csv("/workspaces/ACE-BOOTCAMP-2026-JUNE/day8/used_car_price_prediction_1M.csv")
+print(data.head(5))
+print(data.tail(5))
+print(data.info())
+print(data.shape)
+#---------------------------------------------------
+print(data.iloc[[0]])
+print(data.iloc[[1,2]])
+print(data.iloc[1:,2])
+print(data.Model)
+print(data.loc[[0,1,2,3,4],'Year']) #using loc
+
+#slicing is not applicable on columns
+
+print(data.iloc[0:10,[0,1,2,3,4]]) #rows can be sliced
+print(data.set_index('Model'))
+
+#----------------------------------------------
+print(data.loc[:,'Brand']=="BMW")
+filt=data['Brand']=='BMW'  #filter
+print(data.loc[filt])
+print(data.loc[filt].sort_index(ascending=False).head())
+wdf=data.loc[filt].sort_index(ascending=False).tail(50)
+jdf=wdf
+jdf.to_json("/content/car_blue_")
