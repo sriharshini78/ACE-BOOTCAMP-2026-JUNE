@@ -1,0 +1,3 @@
+en=int(input())
+for i in range(en):
+    print(i+1,end=" ")
