@@ -1,0 +1,3 @@
+l_mtd=[m for m in dir(set) if not m.startswith("__")]
+for mtd in l_mtd:
+    print(mtd)

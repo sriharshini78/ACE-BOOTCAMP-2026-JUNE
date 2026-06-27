@@ -1,0 +1,12 @@
+a=int(input("enter the a value: "))
+b=int(input("enter the b value: "))
+op=input("enter the operator: ")
+match op:
+    case '+':
+        print(a+b)
+    case'-':
+        print(a-b)
+    case _:
+        print("invalid opertaor")
+
+

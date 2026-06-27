@@ -1,0 +1,5 @@
+s_dict={1:'apple',2:'banana'}
+print(s_dict)
+print(s_dict.keys())
+print(s_dict.fromkeys([1,0]))
+print(s_dict)

@@ -1,0 +1,15 @@
+l_mtd=[m for m in dir(dict) if not m.startswith("__")]
+for mtd in l_mtd:
+    print(mtd)
+
+    clear
+copy
+fromkeys
+get
+items
+keys
+pop
+popitem
+setdefault
+update
+values

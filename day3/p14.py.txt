@@ -1,0 +1,12 @@
+#shallow copy in nested list
+import copy
+my_list=[[1,2,3],[1,2,3],[1,2,6]]
+s_list=copy.copy(my_list)
+print(s_list)
+s_list.extend([[2,3,4]])
+print(s_list)
+print(my_list)
+
+s_list[1].remove(3)
+print(s_list)
+print(my_list)
