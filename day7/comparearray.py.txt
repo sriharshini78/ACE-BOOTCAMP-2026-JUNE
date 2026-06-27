@@ -1,0 +1,11 @@
+import numpy as np
+arr=np.array([[8,9],[7,0]])
+arr1=np.array([ [1,2],[4,5]])
+marks=np.array([[1,2,3,4,5],
+               [8,9,6,7,0]])
+#marks.flags.writeable=False; #read only
+marks[(marks>5)&(marks<=6)]=20  #assigning or replacing the value
+print(marks)
+#print("comparision : ",marks[marks>1])
+#print(marks[marks>5])
+

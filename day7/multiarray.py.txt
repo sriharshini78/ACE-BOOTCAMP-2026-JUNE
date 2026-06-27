@@ -1,0 +1,18 @@
+import numpy as np
+
+print(np.__version__)
+arr=np.array([1,2,3,4,5])
+print(arr)
+print(arr.ndim)  #to check dimension of the array
+
+arr1=np.array([[[1,2,3],
+                [6,7,8],
+                [4,3,2]],
+             [[1,2,3],
+              [6,7,8],
+              [4,3,2]]])
+
+print(arr1)
+print(arr1.ndim)  #to check dimension of the array
+print(arr1.shape) # gives rows and columnc and internal
+print(arr1[1,0,1])

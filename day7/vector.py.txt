@@ -1,0 +1,17 @@
+import numpy as np
+arr=np.array([[8,9,6,7,0],
+              [1,2,3,4,5]])
+arr1=np.array([[1,2,3,4,5],
+               [8,9,6,7,0]])
+print(np.sum(arr1))  #sum the values in row
+print(np.sum(arr,1))  #sum of the values using axis for mda
+print("multiplication:",arr @ arr1.T)  #used for matrix multiplicATION
+print("multiplication:",np.matmul(arr,arr1.T))
+print(np.mean(arr))
+print(np.std(arr))
+print(np.var(arr))
+print(np.min(arr))
+print(np.max(arr))
+print(np.argmin(arr))
+print(np.argmax(arr))
+print(np.sqrt(np.std(arr)))

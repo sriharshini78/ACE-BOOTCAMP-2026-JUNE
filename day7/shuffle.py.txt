@@ -1,0 +1,6 @@
+import numpy as np
+ran =np.random.default_rng()
+arr=np.array(["Hp","Lenova","Del","Toshibha"])
+ran.shuffle(arr) #shuffles the values
+print(arr)
+print(ran.choice(arr)) 

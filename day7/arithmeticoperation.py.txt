@@ -1,0 +1,9 @@
+import numpy as np
+
+arr1=np.array([1,2,3,4,5])
+print("multiplication of values in array : ",arr1*2)
+print("addition of values in array : ",arr1+3) #  print(np.add(2,arr))
+print("subtraction of values in array : ",arr1-3)
+print("division of values in array : ",arr1/3)
+print(" of values in array : ",arr1//3)
+print("addition of values in array : ",arr1%3)
